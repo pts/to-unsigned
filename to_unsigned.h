@@ -15,6 +15,9 @@
  * TO_UNSIGNED works for integer byte size 16 in
  * gcc >= 4.6, g++ >= 4.6, clang >= 3.3, clang++ >= 3.3.
  *
+ * It looks like there is no general solution which works for all sizes.
+ * See https://stackoverflow.com/q/20870129/97248 for discussion.
+ *
  * TO_UNSIGNED doesn't work with TCC (https://bellard.org/tcc/), TCC doesn't
  * have __builtin_choose_expr or _Generic.
  *
